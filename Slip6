@@ -1,0 +1,62 @@
+'''
+SLIP 6
+CYBER SECURITY PRACTICAL
+
+Q1) Explain the key behaviors of cyber stalkers and discuss the misuse
+of social networking features. [10 Marks]
+
+Cyber Stalking:
+Cyber stalking is the use of the Internet or digital platforms to
+repeatedly harass, threaten, monitor or disturb a person.
+
+Key Behaviors of Cyber Stalkers:
+1. Repeatedly sending unwanted messages.
+2. Monitoring a person's online activities.
+3. Sending threats or abusive messages.
+4. Creating fake social media accounts.
+5. Sharing personal information without permission.
+6. Following or tracking a person online.
+
+Misuse of Social Networking Features:
+1. Fake profiles can be created to deceive people.
+2. Personal information can be misused.
+3. Photos and videos can be shared without permission.
+4. Private messages can be used for harassment.
+5. Location information can be misused.
+
+Prevention:
+- Keep social media accounts private.
+- Do not share sensitive personal information.
+- Block and report suspicious users.
+- Use strong passwords.
+- Enable two-factor authentication.
+
+
+Q2) Python Program to Check Password Strength. [20 Marks]
+'''
+
+password = input("Enter password: ")
+
+if (len(password) >= 8 and
+    any(ch.isdigit() for ch in password) and
+    any(not ch.isalnum() for ch in password)):
+    print("Strong Password")
+else:
+    print("Weak Password")
+
+'''
+OUTPUT:
+
+Enter password: Hello@123
+Strong Password
+
+
+WORKING:
+
+1. Take password from the user.
+2. Check whether its length is at least 8.
+3. Check whether it contains a digit.
+4. Check whether it contains a special character.
+5. If all conditions are satisfied, display "Strong Password".
+6. Otherwise, display "Weak Password".
+'''
